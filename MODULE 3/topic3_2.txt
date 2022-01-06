@@ -1,0 +1,37 @@
+The indexing and slicing operations described for strings in Module 2 can also be used on lists, with one very important difference. 
+Unlike strings, which are immutable, the contents of a list can change.
+We can change the value of an indexed element or a slice of a list by putting it on the left side of the equal sign in an assignment. We can change individual elements of a list like so:
+>>> x = [1,7,9,3]
+>>> x[2] = ['table','chair','desk']
+>>> x
+[1, 7, ['table', 'chair', 'desk'], 3] 
+Since we specified that the single element with index 2 was to be replaced by a list, our updated list now contains another list in that position. To add several elements to a list as separate entities, we can use a list slice on the left side of the equal sign.
+>>> x = [1,7,9,3]
+>>> x[2:2] = ['table','chair','desk']
+>>> x
+[1, 7, 'table', 'chair', 'desk', 9, 3] 
+By using the same index on each side of the colon, we let Python know that the elements of the new list should be added to the old list as individual elements, not as a list.
+We can change contiguous pieces of a list with a single operation using slices.
+>>> x = ['joe','fred','sally','don']
+>>> x[2:3] = ['sally','harry','randy']
+>>> x
+['joe', 'fred', 'sally', 'harry', 'randy', 'don'] 
+Notice that the list grew, because the list x[2:3] represents only one element, and we provided three in the substitution. Remember that a slice ends right before the second index of the slice.
+Finally, if you need to delete an element of a list, you can use the del operator. Provide either a single index or a slice to specify the elements you wish to delete.
+>>> x = [1,2,3,4,5,6,7]
+>>> x
+[1, 2, 3, 4, 5, 6, 7]
+>>> del x[3]
+>>> x
+[1, 2, 3, 5, 6, 7]
+>>> del x[4:]
+>>> x
+[1, 2, 3, 5] 
+Alternatively, you can remove elements from a list by assigning an empty list to an appropriately formed list slice. For example, to remove element 2 from a list, specify a slice indexed by 2:3. Then, to remove the first three elements from the resulting list (0, 1, and 2), specify :3.
+>>> x = [1,2,3,4,5,6,7]
+>>> x[2:3] = []
+>>> x
+[1, 2, 4, 5, 6, 7]
+>>> x[:3] = []
+>>> x
+[5, 6, 7] 

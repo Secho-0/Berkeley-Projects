@@ -1,0 +1,62 @@
+While you can use slicing and concatenation to manipulate lists, list methods provide alternatives that can be more convenient and powerful. The methods in the table below modify the object on which they are invoked.
+Method
+Use
+append
+Adds a single element to the end of a list
+extend
+Adds several elements to the end of a list
+insert
+Inserts a single element anywhere in a list
+remove
+Removes the first occurrence of a value from a list
+reverse
+Reverses the order of a list in place
+append and extend
+It is important to notice the difference between append and extend. A simple example involving two lists should make this difference clear:
+>>> office = ['desk','chair','file cabinet']
+>>> lounge = ['sofa','table']
+>>> office.append(lounge)
+>>> office
+['desk', 'chair', 'file cabinet', ['sofa', 'table']]
+>>> office = ['desk','chair','file cabinet']
+>>> office.extend(lounge)
+>>> office
+['desk', 'chair', 'file cabinet', 'sofa', 'table'] 
+While append and extend each take exactly one argument, the argument passed to append is added to the list as a single element; the length of the list increases by exactly one.
+When using extend, however, each element of the argument passed to the method is added to the list as a separate element; the length of the list increases by the length of the argument to the extend method.
+Notice that, since the method modifies the list it's acting upon, the variable office had to be reinitialized to show the difference in the two methods when acting on identical lists.
+insert
+The insert method can insert exactly one element into a list. To insert more than one element in a single operation, you must assign the elements to a list slice. Thus, to add the element 'cat' to the array animals after the element 'dog', we could use the following:
+>>> animals = ['duck','chicken','dog','horse','frog']
+>>> animals.insert(3,'cat')
+>>> animals
+['duck', 'chicken', 'dog', 'cat', 'horse', 'frog'] 
+The same 
+  result could be achieved using an assignment to a list slice.
+>>> animals = ['duck','chicken','dog','horse','frog']
+>>> animals[3:3] = ['cat']
+>>> animals
+['duck', 'chicken', 'dog', 'cat', 'horse', 'frog'] 
+remove
+The del operator introduced in Topic 3.2 allows us to delete a list element by specifying it with an index, but the remove method removes the first instance of an element in a list that has a given value. Since it is an error to try and remove an element that is not present in a list, it is often a good idea to check for it first.
+>>> nums = [1,2,7,3,9,7,2,8,7,3]
+>>> x = 4
+>>> if x in nums:
+... nums.remove(x) 
+To remove all elements with a particular value from a list, the remove method can be invoked repeatedly in a while loop, until the value is no longer in the list.
+>>> nums
+[1, 2, 7, 3, 9, 7, 2, 8, 7, 3]
+>>> while 3 in nums:
+... nums.remove(3)
+...
+>>> nums
+[1, 2, 7, 9, 7, 2, 8, 7] 
+We will discuss if and while loops more fully in Module 5.
+reverse
+The reverse method simply reorders the elements of a list so they are the opposite of their original order.
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> x.reverse()
+>>> x
+[9, 8, 7, 6, 5, 4, 3, 2, 1, 0] 
+Notice that reverse does not return the reversed list; it changes the object in place. If you need both the original list and the reversed list, you'll need to copy the list before reversing it.

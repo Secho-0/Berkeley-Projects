@@ -1,0 +1,20 @@
+Tuples are similar to lists, but, like strings, tuples are immutable -- the contents of a tuple cannot be changed. (As a side note, that restriction allows Python to work with tuples a bit more efficiently than it works with lists.)
+Tuples are required in certain functions and for certain operations, so you need to know how to construct and manipulate them.
+	•	Tuples are necessary to provide data for formatting processes that use the % operator. (We'll examine this use more closely in Commentary Topic 4.1, when we discuss printing.)
+	•	Tuples can be used as keys in dictionaries, which we'll discuss in the next commentary topic.
+Lists cannot be used in either of those situations.
+Tuples are created just like lists, except that, instead of using square brackets, you use parentheses to surround the comma-separated elements. An empty tuple is represented by an empty set of parentheses (()). The use of parentheses creates a syntactic dilemma for the Python interpreter in the case of a tuple with only one element, since the parentheses may simply be used as grouping in a complex expression. So, for a tuple with only one element, you must follow that single element with a comma (unlike a list where a single element list can be expressed by just surrounding the element with square brackets).
+Create a tuple with code like the following:
+>>> tupl = (3,7,12,13,19)
+Now, suppose that you want to append the value 21 to the end of the tuple. Because tuples are immutable, there is no append method as there is for lists; you need to concatenate the new value at the end of the original tuple and reassign its value back to that tuple.
+>>> tupl = tupl + (21,)
+>>>  tupl
+(3, 7, 12, 13, 19, 21)
+Alternatively, you could convert the tuple to a list (with the list function), append the value, and convert the list back to a tuple:
+>>> tupl = (3,7,12,13,19)
+>>> ltupl = list(tupl)
+>>> ltupl.append(21)
+>>> tupl = tuple(ltupl)
+>>> tupl
+(3, 7, 12, 13, 19, 21) 
+You can use similar techniques to sort a tuple or reverse the order of its elements.

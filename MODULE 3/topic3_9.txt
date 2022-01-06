@@ -1,0 +1,16 @@
+Like lists, dictionaries can contain a collection of arbitrary objects, but instead of being indexed by consecutive integers, they can be indexed by any immutable object, such as a string or a tuple.
+Because strings are usually more convenient to remember than numbers, dictionaries provide a useful way to store information. Consider a phonebook. While we could create a list with pairs of names and numbers then search through each pair for a name whose number we wanted, dictionaries make the job much easier. Once the dictionary is created, you simply provide the name you want as an index, and the appropriate number is returned. Each element of a dictionary consists of two parts.
+	•	the key, which is the object used to index a value
+	•	the value itself
+When you create a dictionary, separate key/value pairs with a colon (:) and surround a comma-separated list of such pairs with curly braces ({}). So a phonebook could be created with statements like the following:
+>>> phonebook = { 'Fred':'555-1231','Andy':'555-1195','Sue':'555-2193' }
+To access a particular value, simply use its key as the index to the dictionary.
+>>> phonebook['Sue']
+'555-2193' 
+Additional elements can be added to a dictionary through an assignment statement.
+>>> phonebook['Harry'] = '555-3915' 
+To index a dictionary using multiple values, a tuple can be used.
+>>> tupledict = { (7,3):21,(13,4):52,(18,5):90 }
+Any expression that evaluates to an equivalent tuple can be used as a key.
+>>> tupledict[(4+3,9/3)]
+21 

@@ -1,0 +1,27 @@
+You can freely mix literal strings and variables when you are manipulating strings. This makes it very easy to produce customized messages.
+>>> msg = "Send me email.\nMy address is "
+>>> email = "me@mydomain.com"
+>>> print(msg + email)
+Send me email.
+My address is me@mydomain.com
+>>> print(msg + "me@mydomain.com")
+Send me email.
+My address is me@mydomain.com 
+Remember that Python treats strings and numbers differently. Python gets confused when you try to concatenate a string and a number, because the plus sign has a different meaning for strings than it does with numbers. Here is an example:
+>>> price = 12.50
+>>> print("The price is " + price)
+Traceback (innermost last):
+File "<stdin>", line 1, in ?
+TypeError: Can't convert 'float' object to str implicitly
+When you want the string representation of a number, you can use the repr() function to temporarily convert it to a string.
+>>> print("The price is " + repr(price))
+The price is 12.5 
+
+
+
+ 
+Notice that Python didn't print the trailing zero of the variable price. Later in this module we'll see how to use the % operator to take more control of the way strings are formatted for printing.
+ 
+
+
+

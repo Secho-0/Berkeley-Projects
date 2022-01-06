@@ -1,0 +1,23 @@
+Conversion of Scalar Types for String Values
+While the print command will automatically convert numbers to printable strings, the numeric operators do not automatically convert strings to numeric values. You need to do the conversions explicitly.
+To convert a string value to a numeric value, any of the functions int, float, or complex can be used. The following example shows the error that is raised when a value is used in the wrong context and how to correct the error. The same considerations hold when you read numeric values from a file. They will be read as strings and must be converted to the appropriate numeric type before they can be used.
+>>> y = '7'
+>>> x = '3'
+>>> y/x
+Traceback (most recent call last):
+  File  "<pyshell#>", line 1, in <module>
+    y/x
+TypeError: unsupported operand  type(s) for /: 'str' and 'str'
+>>> float(y) / float(x)
+2.3333333333333335
+Similarly, when you want to use a number as a string, you must explicitly call the function str. For example, suppose we wish to use the character concatenation operator (+) to append a number to the end of a filename:
+>>> filename = 'myfile'
+>>> i = 3
+>>> newname = filename +i
+Traceback (most recent call last):
+  File "<pyshell#>",  line 1, in <module>
+    newname = filename + i
+TypeError: Can't convert  'int' object to str implicitly 
+>>> newname = filename + str(i)
+>>> newname
+'myfile3' 

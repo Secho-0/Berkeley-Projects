@@ -1,0 +1,16 @@
+When Python encounters an integer with a leading zero and a small o, it treats the number as an octal (base 8) number instead of the more common decimal (base 10) number. Thus, Python would interpret the constant 0o12 as the number 10.
+>>> value = 0o12 >>> print(value) 10
+Numbers beginning with the characters 0x are treated as hexadecimal (base 16) numbers. Such numbers can contain all ten digits as well as the characters a, b, c, d, e, or f, which represent the digits with decimal values of ten through fifteen.
+Note that both octal and hexadecimal constants are numbers, not strings, and should not be surrounded by quotes. Thus, the correct way to set a variable x to the hexadecimal value 8ab would be
+>>> x = 0x8ab >>> x 2219
+not
+>>> x = '0x8ab' >>> x '0x8ab'
+
+
+
+ 
+Python always uses base 10 to print numbers, regardless of how they were entered in your programs.
+ 
+
+
+
