@@ -1,53 +1,0 @@
-Strings are a collection of characters that are stored together to represent arbitrary text. In Python, you can create string constants by surrounding text with any of these types of quotation marks:
-	•	single quotes (')
-	•	double quotes (")
-	•	a set of three of either type of quotes (''' or """)
-When you use triple quotes, you can extend strings over several lines. With the other types of quotes, strings must be contained on a single line, or a backslash (\) must be appended to every line of the string except the last.
-Here are a couple of examples of assigning string constants to variables:
-name = "Fred Flintstone"
-and
-message = """A long character string, spanning several lines can be stored (with its linebreaks) in a triple-quoted string. This is especially handy for help messages stored inside a program"""
-Strings in Python are said to be immutable; that is, you can't change the elements of a string in place. When you want to modify a string, you must create a new string that contains the modifications you desire.
-Special Character Sequences
-Certain sequences of characters have special meanings inside quoted strings. These sequences begin with a backslash (\) and are listed in the following table:
-Sequence
-Character
-\b
-backspace
-\t
-horizontal tab
-\v
-vertical tab
-\n
-newline
-\a
-bell
-\f
-formfeed
-\r
-carriage return
-\0
-null terminator
-\0nn
-octal escape sequence for ASCII character
-\xnn
-hexadecimal escape sequence for ASCII character
-\e
-escape character
-\'
-single quote (used inside a single quoted string)
-\"
-double quote (used inside of a double quoted string)
-\\
-literal backslash (a backslash will appear in the string)
-There are certain situations when you will want these character sequences to be interpreted literally, that is, without the special meanings listed in the table. For example, slashes must be used literally to construct regular expressions that are used for finding patterns in text. In cases like this, you can precede the initial quote character with the letter r, an abbreviation for raw string. Consider this short interactive Python session:
->>> print('The \n is the newline character') The  is the newline character >>> print(r'The \n is the newline character') The \n is the newline character
-In the first case, the character sequence was interpreted as a newline -- it did not literally appear in the output. In the second case, because of the initial r, each character in the string is interpreted literally.
-Concatenation
-The addition operator (+) is used as a concatenation operator for character strings.
->>> one = 'black' >>> two = 'jack' >>> print(one + two) blackjack
-Repetition
-The asterisk (*) serves as a repetition operator for strings. You can either have a number followed by the asterisk and then the string, or start with a string and follow with an asterisk and a number. In either case, the result is a new string with the old string repeated as many times as the number you specified. Thus, both of the following sequences produce a string containing ten dashes:
->>> '-' * 10 '----------'
-and
->>> 10 * '-' '----------'
