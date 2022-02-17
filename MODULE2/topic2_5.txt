@@ -1,8 +1,0 @@
-To determine whether a particular character or string occurs in a string, you can use the in operator. If the character or string being tested is present in the string, the expression involving the in operator will return True; otherwise it will return False. For example,
->>> string = 'dead parrot'
->>> 'p' in string
-True
->>> 'x' in string
-False
->>> 'parrot' in string
-True

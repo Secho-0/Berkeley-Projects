@@ -1,0 +1,44 @@
+/* 
+    Created on : Nov 20, 2020, 12:29:02 PM
+    Author     : JBowe
+*/
+
+.fleft{float: left;
+    margin-right: 3%;
+}
+.fright{float: right;
+    margin-right: 3%;
+}
+
+
+body{
+    color: black;
+    background-color: #B8D1EB;
+    font-family: 'Times New Roman', serif;
+}
+nav{
+    
+    margin-right: 3%;
+}
+nav ul{
+    list-style-type:none;
+}
+#container{
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+main{
+    background-color:#C5A98B;
+    padding: 10px;
+    clear: both;
+}
+
+footer{
+    font-size: 0.75em;
+    text-align: center;
+}
+
+
+
+

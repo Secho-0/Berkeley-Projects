@@ -1,0 +1,23 @@
+Python provides two pairs of methods to locate substrings within a character string.
+	•	find and rfind, which return the location of the substring if found and -1 if the substring is not found
+	•	index and rindex, which return the location of the substring if found and raise a ValueError exception otherwise
+All the methods accept optional arguments start and end, which limit the search for substrings to just the part of a string on which the method is invoked.
+The methods that begin with the letter r return the highest index at which the substring was found, while the other methods return the lowest index.
+Suppose we had a series of strings, each containing some parenthesized information, and we wished to extract the text found between the parentheses. After finding the index of the parentheses, we can use the slicing operators described above to extract the text we want.
+>>> model = 'Turbo Accelerated Widget (MMX-42b) Press'
+>>> try:
+... model[model.index('(') + 1 : model.rindex(')')]
+except ValueError:
+... print('No parentheses found')
+...
+'MMX-42b' 
+When you use these methods, make sure that you check appropriately for the value that indicates that the substring to search for was not found.
+
+
+
+ 
+While these methods are useful for processing text, methods involving regular expressions, which we'll discuss in Module 8, are often more powerful. Nevertheless, these methods can often provide a simple solution to the problem of extracting text based on context.
+ 
+
+
+

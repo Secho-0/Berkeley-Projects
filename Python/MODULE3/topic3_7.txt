@@ -1,0 +1,48 @@
+While sort modifies the object on which it is invoked, count and index return results about the list itself.
+Method
+Use
+sort
+Sorts elements of a list in place
+count
+Counts the number of times a value appears in a list
+index
+Returns the index of the first occurrence of a value in a list
+sort
+Python provides two methods that reorder the elements of a list. I'll address the advanced method shortly.
+>>> food = ['eggs','bacon','spam','sausage']
+>>> food.sort()
+>>> food
+['bacon',  'eggs', 'sausage', 'spam']
+>>> nums = [14,19,22,31,16] 
+>>> nums.sort()
+>>> nums
+[14, 16, 19, 22, 31] 
+Advanced Sorting
+You can pass a function to the sort method to tell Python how to order the objects that you need sorted. You should model this function on the built-in function cmp, which returns
+	•	-1 if its first argument is greater than the second
+	•	0 if the two arguments are equal
+	•	+1 if the second argument is greater than the first
+We'll look at function definitions in more detail later, but for now let's say we want to sort strings, while ignoring the case of the strings. We can use the lower function in the string module to return the lowercase version of a string, and if we use that version to compare pairs of values, the strings will be sorted without regard to case. We can write a function to do this comparison as follows:
+>>> def nocase(a):
+... return a.lower()
+...
+>>> names = ['fred','judy','Chris','Sam','alex','Heather']
+>> copynames = names[:]
+>>> names.sort()
+>>> names
+['Chris', 'Heather', 'Sam', 'alex', 'fred', 'judy']
+>>> names = copynames[:]
+>>> names.sort(key=nocase)
+>>> names
+['alex', 'Chris', 'fred', 'Heather', 'judy', 'Sam']
+count
+While the in operator can tell whether a particular element is contained in a list, the count method can tell how many times an element appears in a list. For example:
+>>> food = ['spam','spam','spam','sausage','spam']
+>>> food.count('spam')
+4 
+index
+The index method gives the position of the first occurrence of a value in a list.
+>>> food = ['spam','spam','spam','sausage','spam']
+>>> food.index('spam')
+0
+Because count and index are methods, they are invoked by placing the name of the object they are invoked on before the method name, separated by a period.

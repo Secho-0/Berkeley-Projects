@@ -1,0 +1,44 @@
+Module 2 Notes 
+
+Lecture:
+- <img/> tag:
+	- Attributes:
+		- src - the img being inserted
+		- alt - alt text incase the image cannot be displayed
+		- height - height in px
+		- width - width in px 
+
+	IE: <img src="logo.png" alt="Company Logo" height="125" width="200">
+
+- <div</div> is a block level element, Stands for division
+	-starts on new line and takes up the whole width of the webpage unless specified
+	- can contain other div tags 
+	- can be named
+	
+	<div id="main"> 
+	
+<ul></ul> Unordered list
+	- Not ordered, no number
+	- <li></li> denotes List Item
+	- type attribute available
+	
+	<ul type="square">
+		<li> 1 </li>
+		<li> 2 </li>
+	</ul>
+	
+
+<ol></ol> Ordered List
+	-Numbered
+	<li></li> still denotes List Item
+	
+	<ol type="square">
+		<li> 10 </li>
+		<li> 12 </li>
+	</ol>	
+	
+	
+CSS
+Margin = Space around the object
+Border = Line around the content
+Padding = Space between border and content

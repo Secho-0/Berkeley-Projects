@@ -1,8 +1,0 @@
-To extract contiguous portions of a string, you can provide two subscripts separated by a colon (:); the piece of the string that's extracted will start at the first index and continue to one character before the last index. The second index in a slice is never included in the slice.
->>> string 'the quick brown fox' >>> string[4:9] 'quick'
-For the special case of a slice starting at the beginning of a string, you can omit the first index; for a slice continuing to the end of a string, you can omit the second index:
->>> string 'the quick brown fox' >>> string[:3] 'the' >>> string[-3:] 'fox'
-If the second index in a slice is less than or equal to the first index, the result will always be an empty string.
-One of the most common uses for a string slice is to remove the newline that is present on text read from a file. Because the newline must be the last character in a line, a common practice is to replace the contents of the line with a string slice that includes everything but the last character, as illustrated in the following code:
->>> line = 'hello there\n' >>> print(line) hello there  >>> line = line[:-1] >>> print(line) hello there >>>
-Notice that a blank line appeared when printing the original version of line but not after printing the version formed from the slice.

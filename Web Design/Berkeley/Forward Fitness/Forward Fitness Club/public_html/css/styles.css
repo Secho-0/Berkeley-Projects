@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2020, 10:20:59 AM
+    Author     : JBowe
+*/
+
+
+/* Tags */
+h1{ text-align: center;}
+h2{ text-align: center; }
+img{   max-width: 100%; }
+
+
+/*Classes */
+.equip{ display: none }
+.mobile{ display: inline; }
+.tablet{ display: none; }
+.desktop{ display: none; }
+
+/*Containers*/
+body{ background-color:lightgreen; }
+    
+header{
+    margin-top: 0.2em;
+    background-color: #377AE6;
+    border-radius: 50em;
+    text-align: center;
+}
+
+nav{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li{
+    background-color: #5A5AE6;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    white-space: nowrap;
+}
+
+nav li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+main{
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #377AE6;
+    border-top: solid 0.3em #808080;
+    border-bottom: solid 0.3em #808080;
+}
+
+footer{
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 2em;
+}
+#container{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Tablet Styles, min-width: 720 pixels */
+
+@media screen and (min-width: 720px){
+    /*Styles for:
+        Classes*/
+    .mobile{display: block;}
+    .desktop{display: inline;}
+    .tablet{display: block;}
+    .items{
+        display: block;
+        list-style-position: inside;
+        margin-bottom: 5em;
+    }
+    .equip{
+        display: inline-block;
+        float: left;
+        margin-right: 1.5em;
+    }
+    
+    /*Styles for :
+        Body Elements*/
+    nav li{
+        display: inline;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0em;
+        padding-right: 0em;
+        width: 18%;
+        white-space: nowrap;
+    }
+    
+    main{
+        clear: left;
+        margin-top: 4em;
+    }
+    
+    /*Styles for:
+        List Types*/
+    
+    dt{
+        font-weight: bold;
+        margin-top: 0.7em;
+    }
+}
+
+/*Desktop Styles, min-width: 880 pixels*/
+@media screen and (min-width: 880px){
+    
+    /*Styles for:
+        Classes*/
+    .items{ margin-bottom: 6em; }
+    
+    /*Styles for:
+        Body Elements*/
+    body{
+        background: -moz-linear-gradient(lightgreen, white); /*Firefox*/
+        background: -o-linear-gradient(lightgreen, white); /*Opera*/
+        background: -webkit-linear-gradient(lightgreen, white); /*Chrome & Safari */
+        background: linear-gradient(lightgreen, white);
+        background-attachment: fixed;
+    }
+    #container{
+        width: 80%
+    }
+    
+    header{
+        box-shadow: 0.5em 0.5em 0.5em #808080;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    nav ul{
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    
+    nav li{
+        display: inline;
+        border-radius: 0em;
+        border-top: solid #808080;
+        border-bottom: solid #808080;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+        white-space: nowrap;
+    }
+    
+    nav li a{
+        display: inline-block;
+        padding: 0.7em;
+    }
+    
+    nav li a:link{ color:#FFFFFF}
+    nav li a:visited{ color: greenyellow}
+    nav li a:active{color: #6600CC;}
+    nav li a:hover{
+        color: lime;
+        font-style: oblique;
+    }
+    
+    main{
+        border-style: none;
+        box-shadow: 0.5em 0.5em 0.5em #808080;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    
+    main p{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+}

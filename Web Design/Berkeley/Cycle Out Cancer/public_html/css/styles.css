@@ -1,0 +1,35 @@
+/* 
+    Created on : Nov 20, 2020, 2:15:07 PM
+    Author     : Jacob Bowe
+*/
+.fleft{float: left;
+    margin-right: 2%;
+}
+.fright{float: right;
+    margin-right: 2%;
+}
+.boldtext, dt{font-weight: bold;}
+.indent{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+body{
+    color: black;
+    font-family: Calibri, sans-serif;
+    background-color: lightsalmon;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+nav ul{
+    list-style-type: none;
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+    font-size: .75em;
+    
+}

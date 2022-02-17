@@ -1,1 +1,0 @@
-Although snakes are often featured on books about Python, van Rossum's inspiration for the name actually came from his favorite TV show, Monty Python's Flying Circus. Interestingly, many programmers say that Python has brought back some of the fun they had when they were first learning programming, so some of Guido's inspiration may be reflected in the language itself.

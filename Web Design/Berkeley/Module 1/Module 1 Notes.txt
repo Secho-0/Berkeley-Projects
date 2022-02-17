@@ -1,0 +1,149 @@
+Chapter 1 Textbook Notes:
+Internet = The infrastrcuture that allows the WWW to exist
+
+World Wide Web (WWW) = Where we humans are starting to spend most of our time (online)
+
+Node = A device on the network
+Network = Two or more devices sharing resources and information 
+LAN = Small-scale (Building level) Networks
+WAN = a network of LAN's serving a larger area, including and upto internationally
+
+Internet of Things (IoT) = node-to-node connections that do not require human interface
+
+Data lines are the backbone of the internet and are serviced by several large ISP's 
+
+Webpage = files that are linked to the WWW
+Websites = a collection of webpages maintained by an individual / company / organization
+Home Page = the main landing page of a website
+
+Hyperlinks is a way to access a server or file
+	- Can be:
+		- Text
+		- Graphics
+		- Animated
+
+Client = a computer accessing the information of a website
+Server = a computer hosting the information of a website
+
+Protocols = the rules for how a client and server will interact 
+
+HTTP Hyper Text Transfer Protocol = the fundemental protocol of the WWW this is what allows us to use Hyperlinks, send and utilize graphics, audio, text etc
+FTP File Transfer Protocol =  Strictly for file transfer, no way to view webpages. Commonly used for Web Design uploads, or Vendor / Supplier relationships
+TCP/IP Transmission Control Protocol / Internet Protocol = TCP manages the connection, and micromanages data. IP addresses the data to the proper devices
+DNS Domain Naming System = the solution to not having to memorize IP addresses ( 204.79.197.200 , instead of bing.com for example)
+
+Web Browser = Program that interprets and displaces webpages, Chrome Firefox Microsoft Edge Opera etc
+URL Uniform Resource Locator = address of a document or file. 
+	URL:
+		protocol://subdomain.server/domain.name/webpage-location/file-name.html
+
+Domain = area of the internet that someone/something manages 
+These days the subdomain of www. can largely be omitted
+
+Site Types:
+	Internet = Publically available website
+	Intranet = private network that uses Internet technology, but limits access to a specific group
+	Extranet = private network that uses Internet technology, but shares it with key partners or customers
+	E-commerce = a place where one can conduct various kids of commerce acitivies - Browse catalogs, compare products / services etc
+	LMS Learning Management System = A way to simplify web based learning, as a way to improve communication of Announcements, Scheduling, Courseload, Contact info, Learning Aids etc
+	
+Website Planning
+	What is the purpose
+	Who is the audience
+	is it responsive for various devices (phone tablet PC)
+	Wireframe, whats the most basic outline of how you want the website to look
+
+Sitemaps are a way to show how the resources of a website are connected
+
+	Linear:
+
+		X----X----X
+
+			OR
+
+			X
+		/	|	\
+	   X----X----X
+	  
+	Hierarchal:
+
+			X
+		/	|	\
+	   X    X   X
+	   |	|	|
+	   =X   =X  =X
+	   |	|	|
+	   =X   =X  =X
+	   
+	Webbed:
+
+		X----X----X
+		|\	/|\	 /|
+		| X	 |  X |
+		|/  \|/  \|
+		X----X----X
+
+Most places use a combination of these structures to ensure easy navigation through a website
+
+Things to keep in mind:
+	Graphics
+	Color
+	Typography
+	Branding
+	Accessibility
+	
+HTML Hyper Text Markup Language:
+	Uses <tags> </tags> to give structure and provide links 
+	
+		Paired Tags:
+		<nav> </nav> defines a navigation area
+		<html> </html> is the start and end of a webpage
+		<title> </title> provides a title format for the page
+		<body> </body> defines the body of a webpage
+		<p> </p> defines a paragraph within a webpage
+
+		Void Tags:
+		<hr> draws a horizontal line
+		<br> is a linebreak within a paragraph 
+
+XML eXtensible Markup Language:
+	Written to exchange and transport data from webpages, so that it works with HTML but does not replace it 
+XHTML eXtensible Hyper Text Markup Language:
+	HTML but written in XML, mobile device frienldy
+DHTML Dynamic Hyper Text Markup Language:
+	HTML,CSS and JavaScript to create interactive and dynamic web content
+	Introuced in the mid 90's
+
+HTML5 Introduces new tags such as:
+	header
+	nav
+	main
+	footer
+	audio
+	video
+
+in order to help make clearer definition in the structure of the webpages as well as reduce the need for plugins (audio/video)
+
+Javascript is used to create interactivity within websites, including popups, alerts, date, validating data etc. 
+	Javascript is CLIENTSIDE
+	named .htm or .html like any other webpage
+	
+jQuery is a library for JavaScript that makes it easier to integrate into webpages
+	maintained at jquery.organization
+	
+PHP Hypertext Preprocessor is a scripting language used for writing to or querying a database on a server 
+	Serverside
+	PHP scripts result in a webpage that is sent to the client 
+	stuff including PHP must end in .php
+	
+ASP Active Server Pages is a Microsoft technology used to accomplish tasks similar to PHP
+	Must end in .asp
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Chapter 2 Textbook Notes:
+	
+Template = Predefined webpage that contains a structure to be used by all pages on a website
+
+
+	
+

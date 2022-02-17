@@ -1,0 +1,59 @@
+Python is designed so that there really isn't that much to learn in the basic language. For example, it has
+	•	only one basic structure for conditional programming (if/else/elif)
+	•	two looping commands (while and for)
+	•	a consistent method of handling errors (try/except)
+But the language's simplicity doesn't make it inflexible and weak. It simply means that you're not confronted with an overwhelming choice of options at every turn, and that makes programming a much simpler task.
+Object Orientation
+Python is a true object-oriented language. The term "object oriented" has become a buzzword, and high-profile languages such as C++ and Java are object oriented by design. Many other languages add some object-oriented capabilities but are not designed to be object oriented from the ground up, as Python is.
+I'll talk about object orientation in Python in more detail in Modules 3 and 10, but for now, it's good to know why this feature is important. Object-oriented programming allows you to focus on the data you're interested in, whether it's employee information, the results of a scientific experiment or survey, the contents of your CD collection, or information entered by an Internet user into a shopping cart. It allows you to develop methods to deal efficiently with your data.
+Modules
+Python relies on modules -- self-contained programs that define a variety of functions and data types. When you want to do tasks beyond the scope of the basic core language, you can call modules by using the import command. For example, the core distribution of Python contains modules for
+	•	processing files
+	•	accessing your computer's operating system and the Internet
+	•	writing CGI scripts (which handle communicating with pages displayed in Web browsers)
+	•	string handling
+	•	many other tasks
+Optional modules, available at Python.org, can be used to create graphical user interfaces, communicate with databases, process image files, and so on. This structure makes it easy to get started with Python because you can learn specific skills only as you need them. Python also runs more efficiently when you don't include every capability in every program.
+Variables and Assignments
+Like many other programming languages, Python uses the equal sign (=) to assign a value to a variable.
+Variable names in Python are case sensitive and can contain letters, numbers, and the underscore character (_), although they cannot begin with a number.
+You never need to declare variables in Python before you use them; Python figures out what type a variable is by its context.
+When you assign a value to a variable you've used previously, the previous value is overwritten. The del operator can be used to completely remove any trace of a variable; using a variable after you've used the del operator will generate an error.
+To assign a number to a variable, you can just use the number's value. To assign a string to a variable, you can surround it with single or double quotes. Here are some examples:
+x = 5
+
+y = 7
+
+dept = 'Ministry of Silly Walks'
+Indentation
+Python provides you with a fair amount of freedom in composing statements, but there are a few rules to follow. Unlike most languages, Python uses indentation to signal the beginning and end of blocks of your programs. For example,
+Python 3.0 (r30:67507, Dec 3 2008, 20:14:27) [MSC v.1500 32  bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for  more information.
+
+****************************************************************
+Personal firewall software may warn about the connection  IDLE
+makes to its subprocess using this computer's internal  loopback
+interface. This connection is not visible on any  external
+interface and no data is sent to or received from the  Internet.
+****************************************************************
+  
+IDLE 3.0
+
+>>> price = 75.00
+>>> tax = .075
+>>> price * tax
+5.625 
+>>> print("Python is easy")
+Python is easy
+>>> language = "Python"
+>>> for i in language:
+... print(i)
+P
+y
+t
+h
+o
+n
+At the end of the session, a for loop to print each individual letter of the variable called language is executed. The statement that is the body of the loop (print i) is indented from the remainder of the program.
+When you use Python interactively to enter statements that need to be indented, the program provides three dots (...) as an input prompt instead of the usual three angle brackets (>>>). Also, when you're composing a file containing a Python program, you need to consistently indent the body of any loops you create. In either case, statements that are not indented must begin in column 1.
+As an alternative to running Python interactively, you can use an editor of your choice to create a file containing your Python program and then execute it. Editors like emacs, vim, and the editor contained in the IDLE environment are smart about Python's indentation rules and will help you correctly compose your programs.

@@ -1,0 +1,12 @@
+Python supports three types of numeric data.
+	•	floating-point numbers
+	•	integers
+	•	complex numbers
+Starting with 3.0, numeric data types in Python no longer have a limit (practically speaking, but it is actually limited by your system's memory).
+>>> x = 1000000 >>> x * x * x * x *x 1000000000000000000000000000000
+In addition, Python automatically converts integers to floating-point numbers if necessary:
+>>> 1/8 0.125
+Python uses the letter j (or J) following a number to represent the imaginary part of a complex number. Alternatively, you can use the complex() function. The first argument to complex() is the real portion of the complex number, and the optional second argument is the imaginary portion. Both the real and imaginary parts of complex numbers are stored as floating-point numbers in Python.
+You can convert from one type of number to another using the functions int(), float() or complex().
+float() converts an integer to a float, but this is usually unnecessary. Depending on the context, Python will do this conversion automatically.
+>>> x = 2 >>> float(x) 2.0

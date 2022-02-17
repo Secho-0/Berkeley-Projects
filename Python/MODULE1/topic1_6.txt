@@ -1,0 +1,10 @@
+When you use Python through the interpreter or the IDLE program, the statements you type are immediately executed, and, unless you assign a value to a variable, the value is echoed on the screen. This makes Python very convenient to use as a calculator. You can enter values directly or store them in variables.
+>>> width = 2.5
+>>> height = 3.7
+>>> area = 2.5 * 3.7
+>>> area
+9.25
+>>> 2.5 * 3.7
+9.25
+>>> width * height
+9.25

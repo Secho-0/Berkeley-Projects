@@ -1,0 +1,14 @@
+The core language provides a few functions for numeric data, summarized in the table below; many others can be found in standard modules such as math, cmath, array, and random. (To learn more about the standard modules, you can refer to the online documentation link that was installed on your computer along with Python or to the Python Library Reference at Python.org.)
+Function
+Purpose
+abs(x)
+Absolute value
+round(x)
+Rounding to the nearest integer
+divmod(a,b)
+Integer division and modulus (%)
+pow(a,b)
+Alternative to **
+Because there are three types of numbers in Python (floating-point, integers and complex), these functions generally return values of the same type as their input. For example, the absolute value (abs) of an integer will also be an integer.
+The modulus operator (%), which we'll discuss in more detail in Commentary Topic 4.1, allows you to specify the format (exponential floating-point, or hexadecimal integer, for example) in which you want to display the value of an object.
+The math module includes additional functions. Python.org also has a package of numerical routines called NumPy.

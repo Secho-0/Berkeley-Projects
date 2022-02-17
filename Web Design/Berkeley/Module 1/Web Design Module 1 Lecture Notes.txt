@@ -1,0 +1,82 @@
+ARPA = Advanced Researched Projects Agency
+ARPANET = First version of the internet 
+
+Modern internet is a network of networks
+LAN = Connects a small local area (Building, Business etc)
+WAN = Multiple LANs connected to one another , over vast distances
+Node = Any device connected to a network
+
+IoT - Internet of Things = A device that can talk to another device, without requiring any human interaction 
+	i.e. IFTTT , If im within range of my home wifi, turn it on 
+	or a Tesla pulling up to a house and the smartlights turningg on
+
+World Wide Web = 
+	Most commonly used internet applications, as it is what we commonly use for viewing web pages
+	
+	Others:
+	FTP - File Transfer Protocol from a host
+	Telnet - logon to host from remote
+	VPN - secure access to private network over the internet
+
+DNS = how we identify webpages, rather than IP address . Domain Name System. DNS maps hostnames to IP addresses 
+	Type in URL
+	Address REsoution Request sent to DNS
+	DNS returns IP Address
+	Browser uses IP Address to communicate and load the webpage
+	
+IP = Set of rules governing the behavior of data , including routing 
+
+URL parts
+Protocol ://subdomain.server or domain name.com/webpage location/ file name
+
+Types of website:
+Ecommerce
+LMS - Learning Management Systems 
+
+Who is your target audience? 
+Where will the audience be viewing it? Phone, Tablet, PC? Responsive design is a must these days
+
+Wireframe :
+	Visual guide that shows where youre going to put the various webpage elements
+	Passive white space = area between elements
+	Active white space = areas intentionally blank
+	
+Sitemap:
+	A document that shows you how information flows on a website showing how pages are going to be connected
+	Gives the programmer an idea about the structure of webpages
+
+Visuals:
+	Gfx
+	Typography
+	Colour 
+	
+Navigation:
+	A whole topc in and of it self : Information Architecture
+	The flow of information can be part of what allows users to feel like te website is intuitive to use and get through
+	
+Accesibility:
+	Everyone should be taken into consideration including those with impairments , hearing, visual etc
+	
+Programming Languages:
+	Javascript - Clientside script
+	jQuery - Javascript library to help write
+	PHP - Serverisde script
+	ASP - Serverside script
+
+IDE:
+	Notepad++
+	Sublime
+	Atom
+	Dreamweaver
+	CoffeeCup
+	KompoZer
+
+HTML = HyperText Markup Lanuae
+	AUthoring language for webpages
+	Tags define the structure and layout of items in a webpage
+	
+	Start of a tag it reads the rules associated with the tag and tells the computer how to display the information within it 
+	
+	meta tag = where your searc engine terms and characterset are defined
+	head = header
+	body = body

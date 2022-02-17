@@ -1,0 +1,27 @@
+The table below lists the numeric operators available in Python.
+Operator
+Purpose
++
+Addition
+*
+Multiplication
+-
+Subtraction
+/
+Division
+**
+Exponentiation
+These operators are known as binary operators because they take exactly two operands, one on each side of the symbol. The symbols for addition and subtraction, however, can also be used as unary operators by preceding any numeric expression.
+
+
+
+ 
+Like most languages, Python performs multiplication and division before it performs addition, so you should be careful when constructing numeric computations. For example, Python interprets
+4 + 3 * 12 - 5 * 2
+as
+4 + (3 * 12) - (5 * 2)
+If you're not sure what order Python will use to perform your calculations, you can always include as many levels of parentheses as necessary to make your intentions clear.
+ 
+
+
+

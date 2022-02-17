@@ -1,0 +1,48 @@
+len Function
+As it does for lists, strings, and tuples, the len function returns the number of values stored in a dictionary (that is, the number of key/value pairs the dictionary contains).
+Checking for nonexistent keys
+If you try referring to a nonexistent key, Python generates a KeyError exception. The in operator returns True if the specified dictionary contains the key passed as its argument and False otherwise. It can be used in an if clause to avoid using a nonexistent key.
+>>> number = None
+>>> name = 'Sue'
+>>> if name in phonebook:
+...number = phonebook[name]
+... 
+get Method
+The get method also accepts a key as an argument and will return the element of the specified dictionary if it exists. But if the dictionary does not contain that key, it will return the method's optional second argument, which defaults to None. So the previous example could be written as
+>>> name = 'Sue'
+>>> number = phonebook.get(name) 
+Using Exceptions to prevent KeyErrors
+As an alternative to the methods described above, we can use Python's try/except clause to handle possible KeyErrors that arise from trying to access a dictionary using a nonexistent key. For the phonebook example, we could use the following code to set the value of number to None in the case where the specified key didn't exist.
+>>> name = 'Sue'
+>>> try:
+...   number = phonebook[name]
+... except KeyError:
+...   number = None
+... 
+It is a matter of personal choice which method to use to make sure that a key exists before trying to access a dictionary.
+Other Methods for Dictionaries
+Starting with Python 3.0, dictionary methods such as keys(), values() and items() return a view object. They are preferable to lists in that they are dynamic. In other words, changes to the dictionary will be reflected in a view object.
+	•	The keys method returns a view object of just the keys of a dictionary without the corresponding values.
+	•	The values method returns a view object just the values of a dictionary, without the keys, but in an order corresponding to the order that the keys method returns the keys.
+	•	Finally, the items method returns a view object, each element of which is a key/value pair stored in a tuple. The ordering of these tuples once again corresponds to the ordering returned by the keys method.
+Calling the above methods directly will return the view object and not its contents. To see its contents in list format, use the list() function, which will convert it to a list. Here's the result of applying each of these three methods to the phonebook dictionary:
+>>> phonebook.keys()
+<dict_keys object at 0x01334050>
+
+>>> list(phonebook.keys())
+['Sue', 'Andy', 'Fred']
+>>> phonebook['Harry'] = '555-3915'
+>>> list(phonebook.keys())
+['Sue', 'Andy', 'Fred', 'Harry']
+>>> list(phonebook.values())
+['555-2193', '555-3915', '555-1195', '555-1231']
+>>> list(phonebook.items())
+[('Sue', '555-2193'), ('Harry', '555-3915'), ('Andy', '555-1195'), ('Fred',  '555-1231')]
+In addition, you can iterate through the elements of a dictionary with in and a loop:
+>>> for name in phonebook.keys():
+...   print(name)
+
+Sue
+Harry
+Andy
+Fred
