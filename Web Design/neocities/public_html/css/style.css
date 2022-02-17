@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2020, 1:08:09 PM
+    Author     : JBowe
+*/
+
+/* Main Styles Page*/
+h1{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{ color:tomato;}
+
+body{
+    background-image: url("bg.jpg");
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#schoolwork p{
+    font: 1em bold, Verdana, Arial, sans-serif;
+}
+#schoolwork li{
+  list-style-type: none;
+}
+#warcarft{
+    text-align: right;
+} 
+#warcraft li{
+  list-style-type: none;
+}
